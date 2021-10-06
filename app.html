@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+
+<head {{ HEAD_ATTRS }}>
+    {{ HEAD }}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TG18XXRDRL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-TG18XXRDRL');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4113342233049146"
+        crossorigin="anonymous"></script>
+</head>
+
+<body {{ BODY_ATTRS }}>
+    <!-- <div id="fb"></div> -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '945075499401630',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v11.0'
+            });
+        };
+    </script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+    {{ APP }}
+</body>
+<div id="fb-root"></div>
+<!-- <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=true&version=v11.0&appId=945075499401630&autoLogAppEvents=true"
+    nonce="rSxSRo3B"></script> -->
+<script>
+    //ideally this is on top of page; works on bottom as well
+
+    if (/^\?fbclid=/.test(location.search))
+        location.replace(location.href.replace(/\?fbclid.+/, ""));
+
+</script>
+
+</html>
