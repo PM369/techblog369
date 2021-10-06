@@ -2,7 +2,8 @@
   <header>
     <div class="brand-name">
       <nuxt-link to="/">
-        Techblog369
+        <img class="navlogo" src="/techblog369.png" alt="navlogo">
+        <span class="navname">Techblog369</span>
       </nuxt-link>
     </div>
 
@@ -37,9 +38,13 @@ header {
   grid-template: 60px / auto 1fr;
   align-items: center;
   border-radius: 2px;
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(227,201,91,1) 39%, rgba(0,212,255,1) 100%);
-
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(227, 201, 91, 1) 39%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 .app-links {
@@ -71,6 +76,15 @@ header {
   width: 35px;
   padding-right: 16px;
   cursor: pointer;
+}
+.navlogo {
+  width: 60px;
+}
+.navname{
+  text-align: center;
+  margin-top: 10px;
+  display: table-caption;
+  text-shadow: 2px 2px 8px #FF0000;
 }
 
 @media (max-width: 767px) {
